@@ -1,0 +1,26 @@
+               !!! NO INCLUIR EN APPLICATION.PROPERTIES NI EN ESTE ARCHIVO INFORMACION SENSIBLE !!!
+
+# Este archivo es un ejemplo de configuracion
+
+# Para poder usar las variables se deben de incluir en un archivo 'secret.properties'
+# Toda informacion sensible debe ser incluida en el archivo de configuracion 'secret.properties' e importada como variables de entorno en donde se necesiten #
+
+1. Crear un archivo con nombre 'secret.properties' en esta misma carpeta (/resources)
+2. Copiar y pegar todas las variables en el 'secret.properties' y dales valor
+3. Las variables de entorno ya deberian de estar listas para usarse en el proyecto
+
+### 'secret.properties' no debe ser subido al repositorio remoto por que puede causar problemas de seguridad en el proyecto ###
+### 'secret.properties' esta incluido en el '.gitignore' (no se sube al repositorio remoto al hacer 'add .' 'commit' y 'push') ###
+### Si se cambia de carpeta el archivo 'secret.properties' se debe de actualizar la direccion en el '.gitignore' y su importacion en el application.properties###
+
+#Variables:
+# especificar puerto en la url(3306/3307) 3306 por default
+
+mariadb_url=jdbc:mariadb://localhost:3306/ecosistema?createDatabaseIfNotExist=true&serverTimezone=UTC
+mariadb_username=
+mariadb_password=
+cors_url=
+secret_key=
+c_cloud_name=
+c_api_key=
+c_api_secret=
